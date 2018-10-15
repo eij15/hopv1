@@ -1,0 +1,22 @@
+{
+  "name": "vef1-2018-h1",
+  "version": "1.0.0",
+  "description": "hopv1",
+  "main": "index.js",
+  "scripts": {
+    "test": "he"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eij15/hopv1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eij15/hopv1/issues"
+  },
+  "homepage": "https://github.com/eij15/hopv1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
