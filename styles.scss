@@ -1,5 +1,6 @@
 @import "scss/header.scss";
 @import "scss/config.scss";
+@import "scss/forsida_efni.scss";
 
 * {
   padding: 0;
@@ -19,8 +20,6 @@
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
 }
-
-
 
 h1 { /* stylelint-disable-line */ 
   font-size: 50px;
