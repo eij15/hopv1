@@ -4,14 +4,22 @@ $font-size_p: 16px;
 $b: black;
 $tn: none;
 
-.header__name{
+haus{
+    display: flex;
+    background-color: #afb281;
+    height: 10vh;
+    width: 100%;
+
+}
+
+.header__name {
     font-size: $font-size_h1;
     color:$b;
     text-decoration: $tn;
     max-width: $max-width;
 }
 
-.header__links{
+.header__links {
     font-size: $font-size_p;
     color:$b;
     text-decoration: $tn;
@@ -20,4 +28,13 @@ $tn: none;
 
 h1{
     color: red;
+}
+
+.starfsfolk {
+    max-width: $max-width;
+}
+
+.card__img img {
+    height: 50%;
+    width: 50%;
 }
