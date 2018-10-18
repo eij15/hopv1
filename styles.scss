@@ -1,5 +1,5 @@
-@import "scss/config.scss";
 @import "scss/header.scss";
+@import "scss/config.scss";
 
 * {
   padding: 0;
@@ -12,13 +12,15 @@
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
-  max-width: $max-width;
+.main { /* stylelint-disable-line */
+  max-width: 1200px;
   box-sizing: border-box;
   margin: auto;
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
 }
+
+
 
 h1 { /* stylelint-disable-line */ 
   font-size: 50px;
