@@ -1,0 +1,40 @@
+$font-size_h4: 20px;
+$font-size_footer: 14px;
+$font-size_Mark: 11px;
+
+
+.fotur {
+  margin: auto;
+  padding-top: 40px;
+  background-color: #cc9694;
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+
+.card__title h4 {
+    padding-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: $font-size_h4;
+}
+
+.card__efni p{
+    font-family: Helvetica;
+    color: #ffffff;
+    padding-bottom: 5px;
+    font-size: $font-size_footer;
+}
+
+.Mark{
+    text-align: center;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: $font-size_Mark;
+    padding-bottom: 20px; 
+    padding-top: 20px; 
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
