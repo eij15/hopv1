@@ -1,7 +1,6 @@
 @import "scss/config.scss";
 @import "scss/header.scss";
 
-
 * {
   padding: 0;
   margin: 0;
@@ -14,13 +13,13 @@
 }
 
 html { /* stylelint-disable-line */
-  box-sizing: border-box;
-  overflow-x: hidden;
   max-width: $max-width;
+  box-sizing: border-box;
   margin: auto;
+  overflow-x: hidden;
   // TODO fleiri grunn stillingar
 }
 
-h1{
+h1 { /* stylelint-disable-line */ 
   font-size: 50px;
 }
