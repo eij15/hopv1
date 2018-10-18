@@ -1,3 +1,49 @@
+$font-size_h2: 30px;
+$font-size_p: 16px;
+
 .efni {
-  padding-top: 50px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.efni__card {
+    margin: auto;
+    padding-bottom: 40px;
+    width: 50%;
+}
+
+.efni__titill h2 {
+    padding-bottom: 35px; 
+    font-size: $font-size_h2;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.efni__efni p {
+    padding-bottom: 35px;
+    font-size: $font-size_p;
+    font-family: Helvetica;
+}
+
+.efni__takki p {
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 10px;
+    width: 240px;
+    height: 40px;
+    font-size: $font-size_p;
+    font-family: Helvetica;
+    background: #cc9694;
+}
+
+.efni__img img {
+    width: 100%;
+    height: auto;
+}
+
+.efni__card:nth-child(even){
+    padding-left: 20px;
 }
