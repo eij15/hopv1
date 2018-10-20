@@ -1,30 +1,28 @@
 $font-size_h2: 36px;
-$font-size_p: 16px;
-
 $titlefont: 'Oswald', 'Verdana', serif;
 
 @mixin roundedborder {
     border: 1px solid #000;
-    border-radius: 5%;  
+    border-radius: 5px;  
 }
 
 
 .products {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    margin: 20px;
+    margin: 20px -10px;
+    align-items: stretch;
 }
 
 .product {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
-
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
 
     @media (min-width: 700px) {
@@ -34,16 +32,22 @@ $titlefont: 'Oswald', 'Verdana', serif;
     @media (min-width: 1000px) {
         width: 33.3%;
     }
+
+    &__about {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
   
     &__image {
-
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     &__img {
         max-width: 100%;
     }
 
-    &__about {
+    &__description {
         margin-top: 20px;
         margin-bottom: 20px;
 
@@ -55,13 +59,13 @@ $titlefont: 'Oswald', 'Verdana', serif;
 
     }
 
-    &__description {
+    &__text {
         margin-top: 10px;
 
     }
 
     &__tobuy {
-
+        align-items: flex-end;
     }
 
     &__price {
@@ -81,7 +85,7 @@ $titlefont: 'Oswald', 'Verdana', serif;
     }
 
     &__quantity {
-        width: 60%;
+        width: 55%;
         @include roundedborder();
         height: 40px;
 
@@ -92,6 +96,12 @@ $titlefont: 'Oswald', 'Verdana', serif;
         @include roundedborder();
         background-color: #fff;
         height: 40px;
+    }
+
+    &__cartbuttonimg {
+        height: 20px;
+        background-image: url('/img/cart.svg');
+        background-repeat: no-repeat;
     }
 
 }

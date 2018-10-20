@@ -10,17 +10,23 @@
   box-sizing: inherit;
 }
 
-body { /* stylelint-disable-line */
-  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;}
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+
 
 .main { /* stylelint-disable-line */
-  max-width: 1200px;
-  box-sizing: border-box;
   margin: 0 auto;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
+
+  @media (min-width: 1200px) {
+    padding: 0px;
+  }
 }
 
 h1 { /* stylelint-disable-line */ 
