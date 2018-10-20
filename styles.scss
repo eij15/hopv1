@@ -16,7 +16,9 @@ body { /* stylelint-disable-line */
 .main { /* stylelint-disable-line */
   max-width: 1200px;
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
 }

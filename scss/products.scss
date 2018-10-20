@@ -12,18 +12,28 @@ $titlefont: 'Oswald', 'Verdana', serif;
 .products {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px;
-    
 }
 
 .product {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
+
+    @media (min-width: 700px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1000px) {
+        width: 33.3%;
+    }
   
     &__image {
 
@@ -71,21 +81,17 @@ $titlefont: 'Oswald', 'Verdana', serif;
     }
 
     &__quantity {
-        flex: 0 1 60%;
+        width: 60%;
         @include roundedborder();
         height: 40px;
 
     }
 
     &__cartbutton {
-        flex: 0 1 40%;
+        width: 40%;
         @include roundedborder();
         background-color: #fff;
         height: 40px;
     }
-}
 
-.cartimg {
-    display: none;
-    background-image: url("/img/cart.svg");
 }

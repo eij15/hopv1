@@ -14,7 +14,7 @@
   },
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "sass": "node-sass --source-map-embed styles.scss style.css",
+    "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
     "dev": "npm-run-all --parallel sass sass-watch browser-sync",
     "lint": "stylelint styles.scss --syntax scss"
@@ -24,7 +24,7 @@
     "url": "git+https://github.com/eij15/hopv1.git"
   },
   "keywords": [],
-  "author": "Einar",
+  "author": "Einar, Jakob",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eij15/hopv1/issues"
