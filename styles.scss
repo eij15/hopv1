@@ -1,7 +1,3 @@
-@import "scss/header.scss";
-@import "scss/config.scss";
-@import "scss/forsida_efni.scss";
-@import "scss/footer.scss";
 
 * {
   padding: 0;
@@ -14,6 +10,9 @@
   box-sizing: inherit;
 }
 
+body { /* stylelint-disable-line */
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;}
+
 .main { /* stylelint-disable-line */
   max-width: 1200px;
   box-sizing: border-box;
@@ -25,3 +24,9 @@
 h1 { /* stylelint-disable-line */ 
   font-size: 50px;
 }
+
+@import "scss/header.scss";
+@import "scss/config.scss";
+@import "scss/forsida_efni.scss";
+@import "scss/footer.scss";
+@import "scss/products.scss"
