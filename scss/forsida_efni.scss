@@ -28,7 +28,15 @@ $font-size_p: 16px;
     font-family: Helvetica;
 }
 
+.takki{
+    display: flex;
+    margin: auto;
+    vertical-align: middle;
+}
+
 .efni__takki p {
+    
+    margin: auto;
     vertical-align: middle;
     text-align: center;
     border-radius: 10px;
