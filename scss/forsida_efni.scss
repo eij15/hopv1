@@ -7,6 +7,24 @@ $font-size_p: 16px;
     flex-wrap: wrap;
     justify-content: space-around;
 
+    @media (min-width: 1500px) {
+        width: 100%;
+    }
+
+
+    @media (min-width: 1000px) {
+        width: 100%;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+
+    &.efni__img{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
 }
 
 .efni__card {
