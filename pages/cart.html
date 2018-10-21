@@ -1,12 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vöruhúsið — Vörur</title>
+
+  <link rel="stylesheet" href="/grid.css">
+  <link rel="stylesheet" href="/styles.css">
+  <!---fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 </head>
+
 <body>
-    
+
+  <header class="haus">
+    <div class="main">
+      <div class="haus__titill">
+        <h1><a href="#">Vörur</a></h1>
+      </div>
+      <div class="haus__linkar">
+        <a href="/index.html">Forsíða</a>
+        <a href="/pages/products.html">Vörur</a>
+        <a href="/pages/staff.html">Starfsfólk</a>
+      </div>
+      <div class="haus__karfa">
+        <div>
+          <img src="/img/cart.svg" alt="">
+          <a href="/pages/cart.html"> Karfa (3)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="cart">
+      <div class="cart__title">
+        <h2>Vörur í körfu</h2>
+      </div>
+
+      <div class="cart__product">
+        <div class="cart__productpicture">
+          <img class="cart__productimg" src="/img/watch.jpg" alt="armbandsúr">
+        </div>
+        <div class="cart__aboutproduct">
+          <div class="cart__productdescription">
+            <h2 class="product__name">Ótrúlegt úr</h2>
+            <p class="product__text">Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
+          </div>
+          <div class="cart__shoppinginfo">
+            <div class="product__price">
+              <p>99.900 kr.-</p>
+            </div>
+            <div class="cart__shopping">
+              <p>Fjöldi:</p>
+              <div class="cart__buttons">
+                <div class="cart__quantity">1</div>
+                <div class="cart__refresh">Uppfæra</div>
+                <div class="cart__delete">Eyða úr körfu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart__product">
+        <div class="cart__productpicture">
+          <img class="cart__productimg" src="/img/headphones.jpg" alt="heyrnatól">
+        </div>
+        <div class="cart__aboutproduct">
+          <div class="cart__productdescription">
+            <h2 class="product__name">Hágæða heyrnatól</h2>
+            <p class="product__text">Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum
+              við minnst á að þau eru hágæða?</p>
+          </div>
+          <div class="cart__shoppinginfo">
+            <div class="product__price">
+              <p>39.999 kr.-</p>
+            </div>
+            <div class="cart__shopping">
+              <p>Fjöldi:</p>
+              <div class="cart__buttons">
+                <div class="cart__quantity">2</div>
+                <div class="cart__refresh">Uppfæra</div>
+                <div class="cart__delete">Eyða úr körfu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="fotur">
+    <div class="main">
+      <div class="cards">
+        <div class="card">
+          <div class="card__title">
+            <h4>Vöruflokkar</h4>
+          </div>
+          <div class="card__efni">
+            <p>Nauðsynjavörur</p>
+            <p>Frábærar vörur</p>
+            <p>Ómissandi vörur</p>
+            <p>Ótrúlegar vörur</p>
+            <p>Magnaðar vörur</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__title">
+            <h4>Vöruflokkar</h4>
+          </div>
+          <div class="card__efni">
+            <p>Trylltar vörur</p>
+            <p>Geggjaðar vörur</p>
+            <p>Svakalegar vörur</p>
+            <p>Frábærar vörur</p>
+            <p>Klikkaðar vörur</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__title">
+            <h4>Vöruflokkar</h4>
+          </div>
+          <div class="card__efni">
+            <p>Nýar vörur</p>
+            <p>Gamlar vörur</p>
+            <p>Skrítnar vörur</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__title">
+            <h4>Síður</h4>
+          </div>
+          <div class="card__efni">
+            <p>Allar vörur</p>
+            <p>Frábærar vörur</p>
+            <p>Starfsfólk</p>
+            <p>Karfa vörur</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="Mark">
+        <p>&#169; 2018 Vöruhúsið</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
