@@ -1,36 +1,28 @@
 $font-size_h2: 30px;
 $font-size_p: 16px;
 
-.efni {
+.efni__cards {
     padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    @media (min-width: 1500px) {
-        width: 100%;
-    }
-
-
-    @media (min-width: 1000px) {
-        width: 100%;
-    }
-
-    @media (max-width: 500px) {
-        width: 100%;
-    }
-
-    &.efni__img{
-        margin-bottom: 20px;
-        width: 100%;
-    }
 
 }
 
-.efni__card {
+.efni__card {    
     margin: auto;
     padding-bottom: 40px;
-    width: 50%;
+    width: 100%;
+
+
+    @media (max-width: 500px) {
+    width: 100%;
+    }
+
+    @media (min-width: 800px) {
+        width: 50%;
+    }
 }
 
 .efni__titill h2 {
@@ -47,22 +39,20 @@ $font-size_p: 16px;
 }
 
 .takki{
-    display: flex;
-    margin: auto;
-    vertical-align: middle;
-}
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 10px;
+        width: 240px;
+        height: 40px;
+        font-size: $font-size_p;
+        font-family: Helvetica;
+        background: #cc9694;
+        }
 
-.efni__takki p {
+.efni__takki  {
     
     margin: auto;
-    vertical-align: middle;
-    text-align: center;
-    border-radius: 10px;
-    width: 240px;
-    height: 40px;
-    font-size: $font-size_p;
-    font-family: Helvetica;
-    background: #cc9694;
+
 }
 
 .efni__img img {
