@@ -2,6 +2,28 @@ $font-size_h1: 45px;
 $font-size_p: 16px;
 $b: black;
 
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+
+
+
 .haus {
     margin: auto;
     max-width: 100%;

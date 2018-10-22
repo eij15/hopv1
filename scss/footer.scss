@@ -17,11 +17,18 @@ $font-size_Mark: 11px;
     font-size: $font-size_h4;
 }
 
-.card__efni p{
+.card__efni a{
     font-family: Helvetica;
     color: #ffffff;
     padding-bottom: 5px;
     font-size: $font-size_footer;
+}
+
+.card__efni a:hover {
+  font-family: Helvetica;
+  color: black;
+  padding-bottom: 5px;
+  font-size: $font-size_footer;
 }
 
 .Mark{
@@ -44,13 +51,5 @@ $font-size_Mark: 11px;
             flex-wrap: wrap;            
             width: 100%;        
         }
-
-        @media (max-width: 800px) {
-            display: flex;
-            flex-wrap: wrap;            
-            width: 100%;        
-        }
-
-        
     }
 }

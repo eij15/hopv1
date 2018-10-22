@@ -1,5 +1,5 @@
 
-# Hópverkefni 1
+# Vöruhúsið
 
 Verkefnið felst í því að smíða vef eftir forskrift.
 

@@ -33,26 +33,36 @@ $font-size_p: 16px;
 }
 
 .efni__efni p {
+    color: white;
     padding-bottom: 35px;
     font-size: $font-size_p;
     font-family: Helvetica;
 }
 
 .takki{
-        vertical-align: middle;
-        text-align: center;
-        border-radius: 10px;
+        text-align: center;  
+        border-radius: 5px;
         width: 240px;
         height: 40px;
         font-size: $font-size_p;
         font-family: Helvetica;
         background: #cc9694;
+        transition:  1s;
         }
 
-.efni__takki  {
-    
-    margin: auto;
+.takki a {
+    justify-content: center;
+    transition: 1s;
+    color: black;
+}
 
+.takki:hover {
+        color: #cc9694;
+        background: black;
+}
+
+.takki:hover a{   
+    color: #cc9694;
 }
 
 .efni__img img {
