@@ -11,6 +11,8 @@ $buttonheight: 40px;
 .cart {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     &__title {
         font-family: $titlefont;
@@ -54,23 +56,61 @@ $buttonheight: 40px;
 
     }
 
-    &__buttons {
+    &__buttons {    
         display: flex;
         flex-flow: row nowrap;
     }
 
     &__quantity {
         height: $buttonheight;
+        width: 15%;
         @include roundedborder();
+        margin-right: 10px;
+        padding: 5px;
     }
 
     &__refresh {
         height: $buttonheight;
         @include roundedborder();
+        margin-right: 10px;
+        padding: 5px;
     }
 
     &__delete {
         height: $buttonheight;
         @include roundedborder();
+        padding: 5px;
     }
+
+    &__insertinfo {
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__buyerinfo {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    &__paymentinfo {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    &__form {
+        display:flex;
+        flex-flow: column wrap;
+    }
+
+    &__formrow {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__formcol {
+        width: 50%;
+    }
+
 }
