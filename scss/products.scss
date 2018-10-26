@@ -81,27 +81,39 @@ $titlefont: 'Oswald', 'Verdana', serif;
     &__addtocart {
         display: flex;
         flex-flow: row nowrap;
-
+        height: 40px;
     }
 
     &__quantity {
-        width: 55%;
+        width: 40%;
+        margin-right: 5px;
         @include roundedborder();
-        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        font-size: 16px;
 
     }
 
     &__cartbutton {
-        width: 40%;
+        width: 60%;
+        margin-left: 5px;
         @include roundedborder();
         background-color: #fff;
-        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        font-size: 16px;
+
+        img {
+            width: 20px;
+            margin-right: 5px;
+        }
     }
 
-    &__cartbuttonimg {
-        height: 20px;
-        background-image: url('/img/cart.svg');
-        background-repeat: no-repeat;
-    }
+}
 
+.product__cartbutton:hover {
+    background-color: #cc9694;
+    border-color: #cc9694;
 }
