@@ -55,6 +55,9 @@ $buttonheight: 40px;
         @include roundedborder();
         margin-right: 10px;
         padding: 5px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
     }
 
     &__refresh {
@@ -62,18 +65,35 @@ $buttonheight: 40px;
         @include roundedborder();
         margin-right: 10px;
         padding: 5px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
     }
 
     &__delete {
         height: $buttonheight;
         @include roundedborder();
         padding: 5px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 20px;
+            margin-right: 5px;
+        }
     }
 
     &__insertinfo {
         margin-top: 20px;
         display: flex;
         flex-flow: row nowrap;
+
+        @media (min-width:700px) {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__buyerinfo {
@@ -99,6 +119,58 @@ $buttonheight: 40px;
 
     &__formcol {
         width: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
+    &__inputfield {
+        height: 30px;
+        width: 100%;
+        @include roundedborder();
+        font-size: 16px;
+    }
+
+    &__inputfieldsmall {
+        height: 30px;
+        width: 30%;
+        @include roundedborder();
+        font-size: 16px;
+    }
+
+    &__buy {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    &__buybutton {
+        width: 30%;
+        height: 40px;
+        margin-top: 20px;
+        @include roundedborder();
+        background-color: #cc9694;
+        border-color: #cc9694;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+}
+
+.cart__refresh:hover {
+    background-color: #cc9694;
+    border-color: #cc9694;
+
+}
+
+.cart__delete:hover {
+    background-color: #cc9694;
+    border-color: #cc9694;   
+}
+
+.cart__buybutton:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #cc9694;
 }

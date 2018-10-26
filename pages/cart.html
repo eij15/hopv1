@@ -56,9 +56,9 @@
             <div class="cart__shopping">
               <p>Fjöldi:</p>
               <div class="cart__buttons">
-                <div class="cart__quantity">1</div>
-                <div class="cart__refresh">Uppfæra</div>
-                <div class="cart__delete">Eyða úr körfu</div>
+                  <input id="number" type="number" value="1" class="cart__quantity">
+                <button class="cart__refresh">Uppfæra</button>
+                <button class="cart__delete"><img src="/img/cart.svg">Eyða úr körfu</button>
               </div>
             </div>
           </div>
@@ -82,9 +82,9 @@
             <div class="cart__shopping">
               <p>Fjöldi:</p>
               <div class="cart__buttons">
-                <div class="cart__quantity">2</div>
-                <div class="cart__refresh">Uppfæra</div>
-                <div class="cart__delete">Eyða úr körfu</div>
+                  <input id="number" type="number" value="2" class="cart__quantity">
+                <button class="cart__refresh">Uppfæra</button>
+                <button class="cart__delete"><img src="/img/cart.svg">Eyða úr körfu</button>
               </div>
             </div>
           </div>
@@ -95,18 +95,18 @@
         <div class="cart__buyerinfo">
           <p class="product__name">Sendingarupplýsingar</p>
           <div class="cart__form">
-            <div class="cart_formrow">
+            <div class="cart__formrow">
               <div class="cart__formcol">Nafn:</div>
-              <div class="cart__formcol"><input type="text"></div>
+              <div class="cart__formcol"><input type="text" class="cart__inputfield"></div>
             </div>
-            <div class="cart_formrow">
+            <div class="cart__formrow">
               <div class="cart__formcol">Heimilisfang:</div>
-              <div class="cart__formcol"><input type="text"></div>
+              <div class="cart__formcol"><input type="text" class="cart__inputfield"></div>
             </div>
-            <div class="cart_formrow">
+            <div class="cart__formrow">
               <div class="cart__formcol">Póstnúmer:</div>
               <div class="cart__formcol">
-                  <select>
+                  <select class="cart__inputfield">
                     <option>-Velja póstnúmer-</option>
                     <option>101 Reykjavík</option>
                     <option>103 Reykjavík</option>
@@ -297,18 +297,18 @@
         <div class="cart__paymentinfo">
           <p class="product__name">Greiðsluupplýsingar</p>
           <div class="cart__form">
-            <div class="cart_formrow">
+            <div class="cart__formrow">
               <div class="cart__formcol">Kortanúmer:</div>
-              <div class="cart__formcol"><input type="text"></div>
+              <div class="cart__formcol"><input type="text" class="cart__inputfield"></div>
             </div>
-            <div class="cart_formrow">
+            <div class="cart__formrow">
               <div class="cart__formcol">Korthafi:</div>
-              <div class="cart__formcol"><input type="text"></div>
+              <div class="cart__formcol"><input type="text" class="cart__inputfield"></div>
             </div>
-            <div class="cart_formrow">
+            <div class="cart__formrow">
               <div class="cart__formcol">Gildistími:</div>
               <div class="cart__formcol">
-                  <select id="Mán" name="Mán">
+                  <select id="Mán" name="Mán" class="cart__inputfieldsmall">
                       <option>Mán</option>
                       <option>01</option>
                       <option>02</option>
@@ -322,8 +322,8 @@
                       <option>10</option>
                       <option>11</option>
                       <option>12</option>
-                  </select>
-                  <select id="Ár" name="Ár">
+                  </select> /
+                  <select id="Ár" name="Ár" class="cart__inputfieldsmall">
                         <option>Ár</option>
                         <option>18</option>
                         <option>19</option>
@@ -342,6 +342,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="cart__buy">
+      <button class="cart__buybutton">Kaupa</button>
     </div>
   </main>
 
