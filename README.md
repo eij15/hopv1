@@ -1,7 +1,7 @@
 
 # Vöruhúsið
 
-Verkefnið er unnið af Einari og Jakobi.
+Verkefnið er unnið af Einari (eij15) og Jakobi (jse8).
 
 ##Hver gerði hvað:
 

@@ -6,12 +6,15 @@ $titlefont: 'Oswald', 'Verdana', serif;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    
+    margin: 40px -10px;
 
+    &__member {  
+        padding-left: 10px;
+        padding-right: 10px;
 
-    &__member {
+          @media (min-width: 800px) {
+            width: 50%;
+          }
     }
 
     &__picture {
@@ -23,7 +26,8 @@ $titlefont: 'Oswald', 'Verdana', serif;
     }
 
     &__information {
-        vertical-align: middle;
+        text-align: center;
+        width: 100%;
     } 
 
     &__name {
@@ -34,63 +38,27 @@ $titlefont: 'Oswald', 'Verdana', serif;
 
     &__desc {
         text-align: center;
-
     }
 }
 
-.staff__member {
+.flip {
 
-    
-    @media (max-width: 800px) {
-      width: 100%;
+    &__card {
+        transform-style: preserve-3d;
+        transition: transform 0.2s linear;
     }
 
-    @media (min-width: 1000px) {
-      width: 50%;
+    &__face {
+        /* position: absolute; */
+        backface-visibility: hidden;
     }
 
-    @media (min-width: 1500px) {
-      width: 50%;
+    &__back {
+        display: block;
+        transform: rotateY(180deg);
     }
-
 }
-	.outer {
-	  width: 275px;
-	  height: 475px;
-	  -webkit-perspective: 900px;
-      margin-left: 40%;
 
-	}
-
-	.outer div {
-	  width: 275px;
-	  height: 475px;
-	  transition: all .6s;
-      position: absolute
-
-	}
-
-	.front {
-      z-index: 999;
-	}
-
-	.back {
-	  z-index: -999;
-	  transform: rotateY(180deg);
-	}
-
-	.outer:hover .front {
-
-	  transform: rotateY(-180deg);
-	  z-index: -999;
-      cursor: pointer;
-      backface-visibility: hidden;
-	}
-
-	.outer:hover .back {
-	  transform: rotateY(0deg);
-	  z-index: 999;
-      cursor: pointer;
-      backface-visibility: hidden;
-      background-color: white;
-	}
+.flip:hover .flip__card {
+    transform: rotateY(180deg);
+}
